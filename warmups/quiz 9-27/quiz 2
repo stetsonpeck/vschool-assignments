@@ -1,0 +1,42 @@
+Copy this page into word, notebook, brackets or another google doc and answer the questions. 
+
+Match the following:
+
+Array - E            a. “Apple”
+Object - B          b. { name: “Afir”, age: 26 }
+String - A       c. 3
+Float -  D         d. 3.0
+Integer - C        e. [“basketball”, ”football”, “tennis”, “volleyball”]
+
+
+6. How would you select the class “big-column” in css? - .big-column{}
+
+
+7. Which is the better variable name in JavaScript? 
+firstname
+first_name
+firstName - Winner
+FirstName
+
+8.  How would you format the following in JavaScript? What one character would we add? 
+
+if(isCoding===true){console.log(“we are coding!”)}
+
+
+
+
+
+
+
+9. What is the difference between a block and inline element? stacked vs all on one line
+
+
+
+10. How would you select only the <p> tags in the element <div class=”front-page”>?
+
+.firstPage p
+
+
+Bonus:
+
+How would you select only the <p> tags that are first descendants(direct/first children) of <div class=”front-page”> - div > p 

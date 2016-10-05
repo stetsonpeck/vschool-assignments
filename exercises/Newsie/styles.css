@@ -1,0 +1,18 @@
+h1, h3 {
+    text-align: center;
+    color: navy;
+    background-color:gray
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    display:inline-block;
+    width: 30%;
+    vertical-align: text-top;
+    background-color: gray;
+    color: navy;
+}

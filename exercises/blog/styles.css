@@ -1,0 +1,22 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar {
+    height: 50px;
+    width: 94%;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+.icePic {
+    float: left;
+    height: 100px;
+    width: 150px;
+}

@@ -1,0 +1,25 @@
+h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+    color:firebrick
+}
+h3 {
+    border: solid;
+    border-color: firebrick;
+    background-color: #C6C7BC;
+    text-align: center;
+}
+body {
+    background-image: url("mainPic");
+}
+.p2 {
+    text-align: left;
+    font-size: 90%;   
+}
+
+.p1 {
+    margin-left: 80%;
+    width: 20%;
+    
+}

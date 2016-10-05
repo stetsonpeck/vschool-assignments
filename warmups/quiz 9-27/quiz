@@ -1,0 +1,27 @@
+Match the correct number to the correct letter
+
+1. <h1>                                a.   selector
+2. h1  			         b.   tag
+3. color: red;		         c.   attribute	
+4. href="style.css"               d.    css styling
+
+1 = B
+2 = A
+3 = D
+4 = C
+
+5. 
+h1 {
+color:red,
+height:10px
+}
+
+6. use div as the selector
+7. use navbar as the selector
+8. use div p as the selector
+9. use h1 as the selector
+10. <h1 class = "h1h">Welcome to my Website!!</h1>
+    - css
+        - .h1h {
+        color: red,
+        }
