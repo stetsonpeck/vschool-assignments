@@ -1,0 +1,102 @@
+/*{
+    "menu": [
+        {
+            "starters": "Soup"
+    },
+        {
+            "starters": "Salad"
+    },
+        {
+            "coldSandwiches": "Turkey"
+    },
+        {
+            "coldSandwiches": "All Veg"
+    },
+        {
+            "hotSandwiches": "Hot Ham-n-Cheese"
+    },
+        {
+            "hotSandwiches": "Melted Roast Beef"
+    },
+        {
+            "deserts": "Cookie"
+    },
+        {
+            "deserts": "Pie"
+    },
+        {
+            "dranks": "Coca Cola"
+    },
+        {
+            "dranks": "Root Beer"
+    }
+]
+}*/
+[
+    {
+        "starters": [
+            {
+                "name": "Soup",
+                "ingredients": ["Water", "Bacon", "Seasoning"],
+                "description": "Hot soup to keep you warm"
+        },
+            {
+                "name": "Salad",
+                "ingredients": ["Leaves", "Bacon", "Dressing"],
+                "description": "Cold salad to keep you skinny"
+        }
+    ]
+}, {
+        "coldSandwiches": [
+            {
+                "name": "Turkey",
+                "ingredients": ["Bread", "Turkey", "Mayo"],
+                "description": "Classic Turkey Sandwich"
+        },
+            {
+                "name": "Veggie",
+                "ingredients": ["Bread", "Leaves", "Sprouts"],
+                "description": "Delicous Rabbit Special"
+        }
+    ]
+}, {
+        "hotSandwiches": [
+            {
+                "name": "Hot Ham-n-Cheese",
+                "ingredients": ["Bread", "Ham", "Cheese", "Mayo"],
+                "description": "Hot ham and melty cheese"
+        },
+            {
+                "name": "Roasted Beef",
+                "ingredients": ["Bread", "Roast Beef", "Cheese"],
+                "description": "Perfectly roasted beef with a bunch of cheese"
+        }
+    ]
+}, {
+        "deserts": [
+            {
+                "name": "Cookie",
+                "ingredients": ["Chocolate Chips", "Peanut Butter"],
+                "description": "Peanut Butter & Chocolate Chip Goodness"
+        },
+            {
+                "name": "Banana Pie",
+                "ingredients": ["Pie Crust", "Bananas", "Pudding"],
+                "description": "Like yo momma makes it"
+        }
+    ]
+}, {
+        "dranks": [
+            {
+                "name": "Beer",
+                "ingredients": ["Hops", "Barley", "Water"],
+                "description": "Nothing more refreshing"
+        },
+            {
+                "name": "Root Beer",
+                "ingredients": ["Root", "Beer"],
+                "description": "Cold root beer"
+        }
+    ]
+}
+]

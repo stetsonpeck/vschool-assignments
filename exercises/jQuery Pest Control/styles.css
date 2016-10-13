@@ -1,0 +1,92 @@
+body {
+    background-image: url("marioBackground.jpg")
+}
+
+h1 {
+    text-align: center;
+    color: #C7C7C7;
+    text-shadow: 0 0 5px #C7C7C7, 0 0 10px #C7C7C7, 0 0 20px #C7C7C7, 0 0 30px #C7C7C7;
+    font-size: 75px;
+}
+
+h3 {
+    text-align: center;
+    color: darkred;
+    text-shadow: 0 0 5px #C7C7C7, 0 0 10px #C7C7C7, 0 0 20px #C7C7C7;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+    color: #C7C7C7;
+    text-shadow: 0 0 5px #C7C7C7;
+    font-size: 30px;
+}
+
+
+}
+section {
+    display: inline-block;
+}
+.goombaSec {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #C7C7C7;
+    padding: 50px;
+    padding-top: 5px;
+}
+.bombSec {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #C7C7C7;
+    padding: 50px;
+    padding-top: 5px;
+}
+.cheepSec {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 25%;
+    height: 25%;
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #C7C7C7;
+    padding: 50px;
+    padding-top: 5px;
+}
+.caughtG {
+    display: inline;
+    width: 50px;
+}
+p {
+    display: inline;
+    font: text-align: center;
+    color: #C7C7C7;
+    text-shadow: 0 0 5px #C7C7C7;
+    font-size: 25px;
+}
+input {
+    display: inline;
+    size: 20px;
+}
+.total {
+    display: block;
+    font: text-align: center;
+    color: #C7C7C7;
+    text-shadow: 0 0 5px #C7C7C7;
+    font-size: 25px;
+}
+footer {
+    display: block;
+    font: text-align: center;
+    color: #C7C7C7;
+    text-shadow: 0 0 5px #C7C7C7;
+    font-size: 15px;
+}

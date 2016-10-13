@@ -1,0 +1,40 @@
+    @font-face {
+        font-family: square;
+        src: url(anita-semi-square/anitaSemiSquare.ttf);
+    }
+    
+    table {
+        font-family: square;
+        margin-bottom: 30px;
+        background-color: lightgray;
+        border: solid 3px
+    }
+    
+    .rows {
+        border: solid 3px blue;
+    }
+    
+    .name {
+        background-color: grey;
+        border: solid 3px green;
+        width: 250px;
+    }
+    
+    .game {
+        background-color: grey;
+        border: solid 3px green;
+        width: 250px;
+    }
+    
+    .date {
+        background-color: grey;
+        border: solid 3px green;
+        width: 100px;
+    }
+    
+    .score {
+        background-color: grey;
+        border: solid 3px green;
+        width: 100px;
+        text-align: center;
+    }
