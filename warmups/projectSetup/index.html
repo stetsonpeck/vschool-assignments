@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" ng-controller="AddController">
+            <input ng-model="num1" id="add">
+            <input ng-model="num2" id="add">
+            <button ng-click="addThem()" class="btn btn-warning">Add</button>
+            <label for="add">{{sum}}</label>
+        </div>
+        <div class="row" ng-controller="MultiplyController">
+            <input ng-model="num1" id="mult">
+            <input ng-model="num2" id="mult">
+            <button ng-click="multiplyThem()" class="btn btn-warning">Multiply</button>
+            <label for="mult">{{product}}</label>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

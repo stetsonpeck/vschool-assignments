@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="temp.css">
+</head>
+<body ng-controller="myCtrl">
+  <div class='container'>
+    <form name='myForm' class="form-horizontal">
+
+
+     <div class="row">
+       <div class='col-sm-6'>
+         <input class="form-control" ng-model="badge.fName" placeholder="first name" required />
+         <input type="email" class="form-control" ng-model="badge.email" required placeholder="email"  />
+         <input type="number" ng-minlength="10" ng-maxlength="10" class="form-control" ng-model="badge.phone" required placeholder="phone number" />
+
+       </div>
+       <div class='col-sm-6'>
+          <input class="form-control" ng-model="badge.lName" required placeholder="last name" />
+          <input class="form-control" ng-model="badge.birth" required placeholder="birth place" />
+          <input class="form-control" ng-model="badge.food" required placeholder="favorite food" />
+       </div>
+
+     </div>
+     <div class="row">
+       <div class='col-sm-12'>
+          <textarea class="form-control" ng-model="badge.aboutMe" rows="6"></textarea>
+       </div>
+
+     </div>
+    <button class="btn btn-large" ng-disabled="myForm.$invalid" ng-click="submitForm()">submit</button>
+    </form>
+
+
+
+<div ng-repeat="badge in badgeArray track by $index" >
+
+
+ <div class="row">
+   <div class='col-sm-6'>
+     <p class="well">
+        {{badge.fName}}
+     </p>
+     <p class="well">
+         {{badge.email}}
+     </p>
+     <p class="well">
+         {{badge.phone}}
+     </p>
+   </div>
+   <div class='col-sm-6'>
+      <p class="well">
+        {{badge.lName}}
+      </p>
+      <p class="well">
+        {{badge.birth}}
+      </p>
+      <p class="well">
+        {{badge.food}}
+      </p>
+    </div>
+
+ </div>
+ <div class="row">
+   <div class='col-sm-12'>
+     <p class='about-me well'>
+        {{badge.aboutMe}}
+     </p>
+   </div>
+
+ </div>
+
+</div>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

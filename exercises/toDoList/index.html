@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Things Todo</h2>
+    <div ng-controller="myController as todoList">
+        <ul class="list">
+            <li ng-repeat="todo in todoList.todos">
+                <label class="checkbox">
+                    <input type="checkbox" ng-model="todo.done">
+                    <div class="done-{{todo.done}}">{{todo.text}}</div>
+                    <div class="done-{{todo.done}}">{{todo.price}}</div>
+                </label>
+                <img ng-src="{{ todo.img }}"></div>
+    </li>
+    </ul>
+    [ <a href="" ng-click="todoList.archive()">DELETE</a> ]
+    <form ng-submit="todoList.addTodo()">
+        <input type="text" ng-model="todoList.todoText" size="30" placeholder="new todo">
+        <input type="text" ng-model="todoList.todoPrice" size="30" placeholder="price">
+        <input type="text" ng-model="todoList.todoImg" placeholder="image">
+        <input class="btn-primary" type="submit" value="add">
+    </form>
+    </div>
+</body>
+
+</html>

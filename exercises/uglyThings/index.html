@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-controller="myController">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <form name="myForm">
+                    <input ng-model="title" type="text" placeholder="Title">
+            </div>
+            <div class="col-sm-4">
+                <input ng-model="image" type="text" placeholder="Img URL">
+            </div>
+            <div class="col-sm-4">
+                <input ng-model="description" type="text" placeholder="Description">
+            </div>
+        </div>
+        <button ng-click="$submitForm()" class="btn btn-large" ng-disabled="myForm.$invalid" type="submit">Button</button>
+        </form>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>{{ title }}</h3>
+
+            <p>{{ description }}</p>
+            <img ng-src="{{ image }}">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
