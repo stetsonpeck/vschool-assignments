@@ -1,0 +1,19 @@
+body {
+    background: url("pokeball.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 380px;
+}
+
+h1 {
+    color: white;
+}
+
+.top-margin {
+    margin-top: 80px;
+}

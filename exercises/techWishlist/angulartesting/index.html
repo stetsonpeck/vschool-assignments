@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body ng-controller="myController">
+
+    <ul>
+        <li ng-repeat="people in person">
+            <h3> {{ people.firstName }} {{ people.lastName }}</h3>
+        </li>
+
+    </ul>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

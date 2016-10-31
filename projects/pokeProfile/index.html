@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>PokeProfile</title>
+</head>
+
+<body ng-controller="PokeController">
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="top-margin">
+                        <h4 class="text-center">Enter a Pokemon Number:</h4>
+                    </div>
+                    <form class="form-group">
+                        <div>
+                            <input class="form-control" type="number" ng-model="pokeNumber">
+                        </div>
+                    </form>
+                    <div>
+                        <button ng-click="getPokemon(pokeNumber)" class="center-block btn btn-danger btn-block">Search Pokemon</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <h1 class="text-center"> {{ pokemon.name }} </h1>
+                    </div>
+                    <div>
+                        <h4 class="text-center"> Attack: {{ pokemon.attack }}</h4>
+                    </div>
+                    <div>
+                        <h4 class="text-center">Ability: {{ pokemon.abilities }} </h4>
+                    </div>
+                    <div>
+                        <img class="img-responsive center-block" height="175px" width="175px" ng-src="{{ pokemon.image }}">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="pokeServices.js"></script>
+</body>
+
+</html>
