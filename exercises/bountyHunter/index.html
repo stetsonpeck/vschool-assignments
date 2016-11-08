@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bounty Hunter</title>
+    <link rel = "stylesheet" "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+
+<body ng-controller="myController">
+    <div class='container'>
+        <form name='myForm' class="form-horizontal">
+            <div class="row">
+                <div class='col-sm-4'>
+                    <input class="form-control" ng-model="bounties.firstName" placeholder="First Name" />
+                    <input class="form-control" ng-model="bounties.lastName" placeholder="Last Name" />
+                    <input class="form-control" ng-model="bounties.living" placeholder="Living?" />
+                    <input class="form-control" ng-model="bounties.bountyAmt" placeholder="Bounty Amount" />
+                    <input class="form-control" ng-model="bounties.type" placeholder="Type" />
+                    <input class="form-control" ng-model="bounties.id" placeholder="" />
+                </div>
+                <button ng-click=submitForm(bounties) class="btn btn-danger">Submit Bounty</button>
+            </div>
+        </form>
+</body>
+
+</html>
