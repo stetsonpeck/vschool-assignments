@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html ng-app="ToDoList">
+
+<head>
+    <title> </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="=utf-8">
+</head>
+
+<body ng-controller="myController">
+
+    <form>
+        <label>Item</label>
+        <input type="text" ng-model="toDoItem.title">
+        <label>Description</label>
+        <input type="text" ng-model="toDoItem.description">
+        <button ng-click="addItem()">add</button>
+
+        <br><button ng-click="getList()">Get Current List</button>
+
+
+    </form>
+   
+        <div>
+
+            <h3 ng-hide="item.editing" ng-class="{completed : item.completed}">{{ item.title }}</h3>
+            <input ng-show="item.editing" ng-hide="!item.editing" placeholder="title" ng-model="item.title">
+            
+
+            <p ng-hide="item.editing">{{ item.description }}</p>
+            <input ng-show="item.editing" ng-hide="!item.editing" placeholder="description" ng-model="item.description">
+            
+
+            
+            <button ng-click="crossOffItem(item)">completed</button>
+            
+            <button ng-click="item.editing = !item.editing" ng-hide="item.editing"> edit</button>  
+
+           <button ng-show="item.editing" ng-click="editItem(item, $index)">update</button>
+           
+            <button ng-click="removeItem(item)"> Delete </button>
+
+        </div>
+  
+
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ var bounties = [
         living: "",
         bountyAmt: "",
         type: "",
-        id: uuid.v4()
+        id: "1"
     }
 ]
 
