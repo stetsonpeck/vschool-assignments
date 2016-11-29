@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-4" ng-repeat="hunter in hunters">
+        <h2><a href="#/hunter/{{ hunter._id }}">{{ hunter.title }}</a></h2>
+        <small class="text-muted">Posted: {{ hunter.createdAt | date: "short" }}</small>
+        <p>{{ hunter.body }}</p>
+        <ul>
+            <li ng-repeat="comment in hunter.comments">{{ comment.body }}</li>
+        </ul>
+    </div>
+</div>

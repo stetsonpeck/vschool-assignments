@@ -1,0 +1,362 @@
+@font-face {
+    font-family: square;
+    src: url(/anita-semi-square/anitaSemiSquare.ttf);
+}
+
+a,
+a:hover {
+    color: black;
+}
+
+.navItems {
+    font-family: square;
+}
+
+.flag {
+    height: 100%;
+    width: 100%;
+    opacity: .2;
+    position: fixed;
+}
+
+.aboutBugs {
+    background-color: black;
+    color: white;
+    opacity: .9;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+    position: absolute;
+}
+
+.giveback {
+    width: 95%;
+    font-family: square;
+    border: grey;
+    background-color: blue;
+    opacity: .9;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.quote {
+    width: 80%;
+    height: 200px;
+    font-family: square;
+    border: grey;
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropbtn {
+    font-family: square;
+}
+
+.dropdown-content {
+    font-family: square;
+    display: none;
+    position: absolute;
+    left: 10px;
+    background-color: white;
+    width: 170px;
+    box-shadow: 1px 1px 1px gray;
+}
+
+liSpan {
+    width: 100%;
+    height: auto;
+}
+
+.dropdownList {
+    font-family: square;
+    text-align: center;
+    border-top: 1px solid #eee;
+    margin-right: 0px;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    line-height: 24px;
+    display: block;
+}
+
+.dropdownList:hover {
+    text-decoration: none;
+    background-color: #0808A5;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contain {
+    margin: auto;
+    padding: 0 15px;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: square;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #999999;
+    font-weight: 300;
+    margin-top: 75px;
+}
+
+h2 {
+    font-family: square;
+    line-height: 32px;
+    letter-spacing: .2em;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+}
+
+h2:hover {
+    color: rgb(243, 195, 172);
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+    padding-bottom: 15px;
+}
+
+h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h4 {
+    font-family: square;
+    color: black;
+    font-size: 24px;
+    letter-spacing: .1em;
+    text-align: center;
+    line-height: 20px;
+    margin: -11px auto 0px;
+    background-color: white;
+    width: 90px
+}
+
+h1:before,
+h1:after {
+    content: "   ";
+    display: inline-block;
+    max-width: 80px;
+    width: 15%;
+    border-bottom: 1px solid #ddd;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.box {
+    margin: auto;
+    width: 970px;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 9999999;
+    border-bottom: 1px #e0e0e0 solid;
+    color: black;
+}
+
+.envi {
+    padding-top: 5px;
+    z-index: 0;
+    position: relative;
+}
+
+.headerRow {
+    position: relative;
+    z-index: 9999999;
+    background-color: white;
+}
+
+.nav {
+    text-align: center;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline;
+    width: 100%;
+}
+
+p {
+    font-family: square;
+    font-weight: 700;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.whoWe {
+    font-family: square;
+    font-weight: 700;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    opacity: .8;
+    color: black;
+}
+
+li {
+    display: inline;
+    font-family: square;
+    text-transform: uppercase;
+    /*    font-size: 14px;*/
+    line-height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: inline;
+    font-family: square;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 72px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.dropdown:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.headerLogo {
+    margin-top: 16px;
+    margin-left: 10px;
+    height: 70px;
+    width: 200px;
+    padding: 0;
+}
+
+.headerLogo:hover {
+    cursor: pointer;
+}
+
+
+}
+.searchDiv {
+    position: relative;
+}
+#searchBox {
+    font-family: square;
+    font-style: italic;
+    margin-top: 13px;
+    margin-right: 10px;
+    height: 33px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 35px;
+}
+.slideImage {
+    width: 100%;
+    margin-top: 60px;
+    transition: opacity 1s ease-in-out;
+}
+#banner {
+    height: auto;
+    z-index: -1;
+    margin-top: -10px;
+}
+.mainCol {
+    padding: 0 15px;
+}
+.pestPhotos {
+    padding: 0;
+    box-sizing: border-box;
+    display: inline;
+    width: 100%;
+    opacity: .9;
+    border: silver solid 2px;
+    margin: -3px;
+    margin-bottom: -1px
+}
+.pestPhotos:hover {
+    cursor: pointer;
+}
+.postImage {
+    width: 100%;
+}
+.rightFoot {
+    text-align: right;
+}
+.bugs {
+    text-align: center;
+    font-size: 21px;
+    letter-spacing: .1em;
+    font-family: square;
+    font-weight: bold;
+    margin: 18px auto;
+}
+@media screen and (min-width: 481px) {
+    .pestPhotos {
+        box-sizing: border-box;
+        width: 25%;
+    }
+}
+@media screen and (min-width: 627px) {
+    .relImgDiv {
+        height: auto;
+        width: 24.5%;
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 641px) {
+    .pestPhotos {
+        box-sizing: border-box;
+        width: 10%;
+    }
+}
+#p1 {
+    background-color: black;
+    width: 100%;
+}

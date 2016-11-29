@@ -1,8 +1,32 @@
-var app = angular.module("main", []);
+var app = angular.module("mainApp", []);
 
-app.controller("myCtrl", ["$scope", function ($scope) {
-    $scope.badgeArray = [];
-    $scope.submitForm = function () {
-        $scope.badgeArray.push($scope.badge);
-    }
-}])
+app.controller("MainController", ["$scope", function ($scope) {
+
+    $scope.people = [
+        {
+            firstName: "stetson",
+            lastName: "peck",
+            email: "test",
+            birthPlace: "slc",
+            phone: 2223334567,
+            food: "pizza",
+            about: "stuff"
+        },
+        {
+            firstName: "tyler",
+            lastName: "peck",
+            email: "tyler@gmail.com",
+            birthPlace: "slc",
+            phone: 1234563432,
+            food: "pizza",
+            about: "stuff"
+        },
+    ];
+    $scope.colors = ['red', 'blue', 'green', 'brown', 'purple']
+
+    $scope.addPerson = function (person) {
+        $scope.people.push(person);
+        $scope.person = {};
+    };
+
+}]);

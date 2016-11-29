@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="HunterApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hunters</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+    <!--  Libs  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <!--  Main JS  -->
+    <script src="app.js"></script>
+    <!--  Controllers  -->
+    <script src="components/hunter-list/hunterList.js"></script>
+    <script src="components/hunter-detail/hunterDetail.js"></script>
+    <!--  Services  -->
+    <script src="components/services/hunterService.js"></script>
+</body>
+
+</html>

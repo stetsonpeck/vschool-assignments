@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Looking 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainController" class="container">
+    <div class="well">
+        <form name="userForm">
+            <fieldset>
+                <input type="text" placeholder="Item Name" ng-model="items.name" required>
+                <input type="text" placeholder="Willing to Pay" ng-model="items.amount" required>
+                <br>
+                <br>
+                <textarea name="textArea" cols="40" rows="5" class="infoBox" placeholder="Explain exactly what you are looking for! -Color, etc." ng-model="items.description" ng-minlength="3" required></textarea>
+                <br>
+                <br>
+                <input type="text" placeholder="First Name" ng-model="items.firstName" ng-minlength="3" required>
+                <input type="text" placeholder="City" ng-model="items.city" ng-minlength="3" required>
+                <br>
+                <br>
+
+                <button class="btn btn-access" ng-click="addItems(items)" ng-disabled="userForm.$invalid">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="row displayDiv" ng-repeat="items in item track by $index">
+        <h3 ng-style="{'background-color': colors[$index % colors.length]}">Looking 4</h3>
+        <form class="displayForm row">
+            <fieldset>
+                <div class="topLine col-lg-6 col-lg-offset-3">
+                    <br>
+                    <span class="left"><b>Looking 4:</b> {{ items.name }}</span>
+                    <span class="right"><b>Willing to Pay:</b> {{ items.amount }}</span>
+                    <br>
+                </div>
+                <br>
+                <div class="middleLine col-lg-6 col-lg-offset-3">
+                    <div class="aboutItem col-lg-6 col-lg-offset-3">
+                        <span>{{ items.description }}</span>
+                    </div>
+                </div>
+                <div class="bottomeLine col-lg-6 col-lg-offset-3">
+                    <span class="left"><b>Name:</b> {{ items.firstName }}</span>
+                    <span class="right"><b>Location:</b> {{ items.city}}</span>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <textarea name="textArea" cols="40" rows="5" class="infoBox" placeholder="User Comments" ng-model="items.comments"></textarea>
+                    <button class="btn btn-access" ng-click="addItems(items)">Comment</button>
+                </div>
+            </fieldset>
+            <br>
+            <br>
+        </form>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
